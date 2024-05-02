@@ -9,7 +9,7 @@ isRed = False
 def read_board():
   boardLines = []
   
-  with open("README.md", "w") as f:
+  with open("README.md", "r") as f:
     boardLines = f.readlines()
 
   if boardLines[0].contains("0"):
