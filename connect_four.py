@@ -1,6 +1,5 @@
 def main():
-  readme_text = 
-  """
+  readme_text = """
   # Hello!
   ## This is testing :)
   """
