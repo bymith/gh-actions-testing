@@ -6,14 +6,13 @@ issue = repo.get_issue(number=int(os.environ['ISSUE_NUMBER']))
 # board is 7x6 I *think*
 # took me way to long to realize \n is counted as a character
 board = [ 
-  [[],[],[],[],[],[],[]],
-  [[],[],[],[],[],[],[]],
-  [[],[],[],[],[],[],[]],
-  [[],[],[],[],[],[],[]],
-  [[],[],[],[],[],[],[]],
-  [[],[],[],[],[],[],[]],
-  [[],[],[],[],[],[],[]],
-  [[],[],[],[],[],[],[]]
+  [[],[],[],[],[],[],[],[]],
+  [[],[],[],[],[],[],[],[]],
+  [[],[],[],[],[],[],[],[]],
+  [[],[],[],[],[],[],[],[]],
+  [[],[],[],[],[],[],[],[]],
+  [[],[],[],[],[],[],[],[]],
+  [[],[],[],[],[],[],[],[]]
 ]
 isRed = False
 
@@ -35,7 +34,10 @@ def read_board():
     x=0
     print(len(line))
     for character in line:
-      board[y][x] = character # he he wrong side im dumb
+      print(x)
+      print(y)
+      print("-")
+      board[x][y] = character # he he wrong side im dumb
       x+=1
     y+=1
 
