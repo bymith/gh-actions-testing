@@ -35,6 +35,7 @@ def read_board():
     x=0
     print(len(line))
     for character in line:
+      print(boardLines)
       board[x][y] = character # he he wrong side im dumb
       x+=1
     y+=1
