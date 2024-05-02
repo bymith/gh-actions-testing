@@ -3,7 +3,16 @@ from github import Github
 
 repo = Github(os.environ['GITHUB_TOKEN']).get_repo(os.environ['GITHUB_REPOSITORY'])
 issue = repo.get_issue(number=int(os.environ['ISSUE_NUMBER']))
-board = []
+# board is 7x6 I *think*
+board = [ 
+  [[],[],[],[],[],[]],
+  [[],[],[],[],[],[]],
+  [[],[],[],[],[],[]],
+  [[],[],[],[],[],[]],
+  [[],[],[],[],[],[]],
+  [[],[],[],[],[],[]],
+  [[],[],[],[],[],[]]
+]
 isRed = False
 
 def read_board():
