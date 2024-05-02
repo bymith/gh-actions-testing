@@ -20,7 +20,7 @@ isRed = False
 def read_board():
   boardLines = []
   
-  with open("README.md", "r") as f:
+  with open("boardstate.board", "r") as f:
     boardLines = f.readlines()
 
   if "0" in boardLines[0]:
@@ -35,7 +35,6 @@ def read_board():
     x=0
     print(len(line))
     for character in line:
-      print(boardLines)
       board[x][y] = character # he he wrong side im dumb
       x+=1
     y+=1
