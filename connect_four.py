@@ -28,16 +28,16 @@ def read_board():
   
   boardLines.pop(0)
   
-  y=0
+  x=0
   
   print(len(boardLines))
   for line in boardLines:
-    x=0
+    y=0
     print(len(line))
     for character in line:
       board[x][y] = character # he he wrong side im dumb
-      x+=1
-    y+=1
+      y+=1
+    x+=1
 
 def main():
 
