@@ -10,7 +10,7 @@ def main():
   ## This is testing :)
 
   
-  """ + issue.title()
+  """ + issue.title
   
   with open("README.md", "w") as f:
         f.write(readme_text)
