@@ -12,7 +12,7 @@ def read_board():
   with open("README.md", "r") as f:
     boardLines = f.readlines()
 
-  if boardLines[0].contains("0"):
+  if "0" in boardLines[0]:
     isRed = True
   
   boardLines.pop(0)
