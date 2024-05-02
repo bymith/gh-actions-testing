@@ -30,7 +30,7 @@ def read_board():
   for line in boardLines:
     x=0
     for character in line:
-      board[x][y] = character
+      board[y][x] = character
       x+=1
     y+=1
 
