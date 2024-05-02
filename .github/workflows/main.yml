@@ -17,7 +17,7 @@ jobs:
       - name: imageine if this worked lmfao        
       - run: pip install -r requirements.txt
       
-      - name: Update game        
+      - name: workmk     
       - run: python main.py
         env:
           API_KEY: ${{ secrets.API_KEY }}
