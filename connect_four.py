@@ -39,6 +39,8 @@ def read_board():
       print(y)
       print("-")
       board[x][y] = character # he he wrong side im dumb
+      if character == "0":
+        board[x][y] = " "
       x+=1
     y+=1
 
