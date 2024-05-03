@@ -114,12 +114,7 @@ def main():
     if isRed:
       theString = "1\n"
 
-    theString += """%s%s%s%s%s%s%s
-    %s%s%s%s%s%s%s
-    %s%s%s%s%s%s%s
-    %s%s%s%s%s%s%s
-    %s%s%s%s%s%s%s
-    %s%s%s%s%s%s%s""" % (
+    theString += "%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s" % (
         board[0][0],board[1][0],board[2][0],board[3][0],board[4][0],board[5][0],board[6][0],
         board[0][1],board[1][1],board[2][1],board[3][1],board[4][1],board[5][1],board[6][1],
         board[0][2],board[1][2],board[2][2],board[3][2],board[4][2],board[5][2],board[6][2],
