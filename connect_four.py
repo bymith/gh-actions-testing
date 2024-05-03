@@ -115,7 +115,9 @@ def main():
     if isRed:
       theString = "1"
     for column in board:
+      print(column)
       for rowItem in column:
+        print(rowItem)
         if rowItem == ".":
           theString += "0"
         else:
