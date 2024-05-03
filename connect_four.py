@@ -33,20 +33,19 @@ def read_board():
   print(len(boardLines))
   for line in boardLines:
     x=0
-    print(len(line))
     for character in line:
-      print(x)
-      print(y)
-      print("-")
       board[x][y] = character # he he wrong side im dumb
       if character == "0":
         board[x][y] = "."
       x+=1
     y+=1
+  print(board)
+  print("^^^^ read board")
 
 def fall(colNum):
   if not board[colNum][0] == ".":
     issue.create_comment("bruh that column is filled...")
+    issue.create_comment(str(board))
     return
 
   y = 0
