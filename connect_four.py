@@ -40,12 +40,16 @@ def read_board():
       print("-")
       board[x][y] = character # he he wrong side im dumb
       if character == "0":
-        board[x][y] = " "
+        board[x][y] = "."
       x+=1
     y+=1
 
 def main():
 
+  if not issue.title.startswith("dropTile|"):
+    issue.create_comment("Grrrr you didn't get the format right >:(")
+    issue.edit(state='closed')
+  
   read_board()
 
   turn = "blue"
@@ -57,7 +61,7 @@ def main():
   # Hello!
   ## you can play connect 4 below!
 
-  It is **%s's** turn. (o is blue, x is red)
+  It is **%s's** turn. (o is blue, x is red, and a . is nothing (github will just collapse the row if I don't have something there))
   
   | [1](%s) | [2](%s) | [3](%s) | [4](%s) | [5](%s) | [6](%s) | [7](%s) |
   | - | - | - | - | - | - | - |
