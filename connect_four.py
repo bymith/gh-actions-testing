@@ -51,7 +51,7 @@ def fall(colNum):
 
   y = 0
   for rowItem in board[colNum]:
-    if not rowItem == ".":
+    if not rowItem == "." or y == len(board[colNum])-2:
       if isRed:
         board[colNum][y] = "x"
       else:
