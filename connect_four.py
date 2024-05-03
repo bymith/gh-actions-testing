@@ -23,7 +23,7 @@ def read_board():
   with open("boardstate.board", "r") as f:
     boardLines = f.readlines()
 
-  if "1" in boardLines[0]:
+  if "0" in boardLines[0]:
     isRed = True
   
   boardLines.pop(0)
