@@ -108,7 +108,14 @@ def main():
     print(row)
   
   with open("README.md", "w") as f:
-        f.write(readme_text)
+    f.write(readme_text)
+
+  with open("boardstate.board", "w") as f:
+    theString = "0"
+    if isRed:
+      theString = "1"
+        
+    f.write()
   
   issue.edit(state='closed') # we done :)
 
