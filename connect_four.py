@@ -51,11 +51,11 @@ def fall(colNum):
 
   y = 0
   for rowItem in board[colNum]:
-    if not rowItem == "." or y == len(board[colNum])-2:
+    if not rowItem == "." or y == len(board[colNum])-1:
       if isRed:
-        board[colNum][y] = "x"
+        board[colNum-1][y] = "x"
       else:
-        board[colNum][y] = "o"
+        board[colNum-1][y] = "o"
       break
     y+=1
     
