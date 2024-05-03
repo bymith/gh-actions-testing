@@ -114,8 +114,13 @@ def main():
     theString = "0"
     if isRed:
       theString = "1"
-        
-    f.write()
+    for column in board:
+      for rowItem in column:
+        if rowItem == ".":
+          theString += "0"
+        else:
+          theString += rowItem        
+    f.write(theString)
   
   issue.edit(state='closed') # we done :)
 
