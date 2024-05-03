@@ -112,7 +112,7 @@ def main():
   with open("boardstate.board", "w") as f:
     theString = "1\n"
     if isRed:
-      theString = "2\n"
+      theString = "0\n"
 
     theString += "%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s" % (
         board[0][0],board[1][0],board[2][0],board[3][0],board[4][0],board[5][0],board[6][0],
