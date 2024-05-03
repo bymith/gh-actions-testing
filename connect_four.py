@@ -110,9 +110,9 @@ def main():
     f.write(readme_text)
 
   with open("boardstate.board", "w") as f:
-    theString = "0\n"
+    theString = "1\n"
     if isRed:
-      theString = "1\n"
+      theString = "2\n"
 
     theString += "%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s\n%s%s%s%s%s%s%s" % (
         board[0][0],board[1][0],board[2][0],board[3][0],board[4][0],board[5][0],board[6][0],
