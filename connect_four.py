@@ -45,12 +45,19 @@ def read_board():
 def main():
 
   read_board()
+
+  turn = "blue"
+
+  if isRed:
+    turn = "red"
   
   readme_text = """
   # Hello!
   ## you can play connect 4 below!
 
-  | [1] | [2] | [3] | [4] | [5] | [6] | [7] |
+  It is **%s's** turn. (o is blue, x is red)
+  
+  | [1](%s) | [2](%s) | [3](%s) | [4](%s) | [5](%s) | [6](%s) | [7](%s) |
   | - | - | - | - | - | - | - |
   | %s | %s | %s | %s | %s | %s | %s |
   | %s | %s | %s | %s | %s | %s | %s |
@@ -59,7 +66,15 @@ def main():
   | %s | %s | %s | %s | %s | %s | %s |
   | %s | %s | %s | %s | %s | %s | %s |
   
-  """ % (board[0][0],board[1][0],board[2][0],board[3][0],board[4][0],board[5][0],board[6][0],
+  """ % (turn,
+        "https://github.com/bymith/gh-actions-testing/issues/new?title=dropTile%7Cred%7C1&body=Hit+sumbit+new+issue+or+just+press+enter.+Then+just+wait+like+30+seconds+for+it+to+update+%3A%29",
+        "https://github.com/bymith/gh-actions-testing/issues/new?title=dropTile%7Cred%7C2&body=Hit+sumbit+new+issue+or+just+press+enter.+Then+just+wait+like+30+seconds+for+it+to+update+%3A%29",
+        "https://github.com/bymith/gh-actions-testing/issues/new?title=dropTile%7Cred%7C3&body=Hit+sumbit+new+issue+or+just+press+enter.+Then+just+wait+like+30+seconds+for+it+to+update+%3A%29",
+        "https://github.com/bymith/gh-actions-testing/issues/new?title=dropTile%7Cred%7C4&body=Hit+sumbit+new+issue+or+just+press+enter.+Then+just+wait+like+30+seconds+for+it+to+update+%3A%29",
+        "https://github.com/bymith/gh-actions-testing/issues/new?title=dropTile%7Cred%7C5&body=Hit+sumbit+new+issue+or+just+press+enter.+Then+just+wait+like+30+seconds+for+it+to+update+%3A%29",
+        "https://github.com/bymith/gh-actions-testing/issues/new?title=dropTile%7Cred%7C6&body=Hit+sumbit+new+issue+or+just+press+enter.+Then+just+wait+like+30+seconds+for+it+to+update+%3A%29",
+        "https://github.com/bymith/gh-actions-testing/issues/new?title=dropTile%7Cred%7C7&body=Hit+sumbit+new+issue+or+just+press+enter.+Then+just+wait+like+30+seconds+for+it+to+update+%3A%29",
+        board[0][0],board[1][0],board[2][0],board[3][0],board[4][0],board[5][0],board[6][0],
         board[0][1],board[1][1],board[2][1],board[3][1],board[4][1],board[5][1],board[6][1],
         board[0][2],board[1][2],board[2][2],board[3][2],board[4][2],board[5][2],board[6][2],
         board[0][3],board[1][3],board[2][3],board[3][3],board[4][3],board[5][3],board[6][3],
