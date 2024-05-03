@@ -45,7 +45,7 @@ def read_board():
     y+=1
 
 def fall(colNum):
-  if not board[colNum] == ".":
+  if not board[colNum][0] == ".":
     issue.create_comment("bruh that column is filled...")
     return
 
